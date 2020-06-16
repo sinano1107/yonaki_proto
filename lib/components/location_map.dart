@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 import 'package:yonakiproto/services/latlong_service.dart';
+import 'package:yonakiproto/services/parameter.dart';
 
 class LocationMap extends StatefulWidget {
   @override
@@ -82,17 +83,16 @@ class _LocationMapState extends State<LocationMap> {
 
   void _getLocation() async {
     _location = await _locationService.getLocation();
-    await Future.delayed(Duration(seconds: 5));
-    print('五秒たったのでbeforeLocationに代入');
+    await Future.delayed(Duration(seconds: Parameter.kLocationInitTime));
+    print('${Parameter.kLocationInitTime}秒たったのでbeforeLocationに代入');
     _beforeLocation = _location;
-    print('beforeLocation: $_beforeLocation');
     _loopCheckLocation();
   }
 
   void _loopCheckLocation() async {
     while (true) {
       // 10 ~ 20秒の待ち時間
-      final waitTime = Random().nextInt(5) + 5;
+      final waitTime = Random().nextInt(Parameter.kLocationCheckRandom) + Parameter.kLocationCheckFoundation;
       await Future.delayed(Duration(seconds: waitTime));
       print('$waitTime秒待ったので直線距離で測定');
       final _distance = LatlongService().getDistance(data1: _beforeLocation, data2: _location);
