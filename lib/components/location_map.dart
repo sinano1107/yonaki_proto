@@ -25,6 +25,11 @@ class _LocationMapState extends State<LocationMap> {
   // オトシモノシステム用の位置情報保存変数
   LocationData _beforeLocation;
 
+  // テスト用変数群
+  int _testWaitTime = 0;
+  double _testDistance = 0;
+  String message = 'message';
+
   @override
   void initState() {
     super.initState();
@@ -35,10 +40,10 @@ class _LocationMapState extends State<LocationMap> {
     // 現在位置の変化を監視
     _locationChangedListen =
         _locationService.onLocationChanged.listen((LocationData result) async {
-          setState(() {
-            _location = result;
-          });
-        });
+      setState(() {
+        _location = result;
+      });
+    });
   }
 
   @override
@@ -52,7 +57,27 @@ class _LocationMapState extends State<LocationMap> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _makeGoogleMap(),
+      body: Stack(
+        children: <Widget>[
+          _makeGoogleMap(),
+          Column(
+            children: <Widget>[
+              Text(
+                '$_testWaitTime秒後に判定',
+                style: TextStyle(fontSize: 30),
+              ),
+              Text(
+                '$_testDistance m移動しました',
+                style: TextStyle(fontSize: 30),
+              ),
+              Text(
+                message,
+                style: TextStyle(fontSize: 20),
+              )
+            ],
+          ),
+        ],
+      ),
     );
   }
 
@@ -65,7 +90,6 @@ class _LocationMapState extends State<LocationMap> {
     } else {
       // Google Map ウィジェットを返す
       return GoogleMap(
-
         // 初期表示される位置情報を現在位置から設定
         initialCameraPosition: CameraPosition(
           target: LatLng(_location.latitude, _location.longitude),
@@ -91,11 +115,26 @@ class _LocationMapState extends State<LocationMap> {
 
   void _loopCheckLocation() async {
     while (true) {
-      // 10 ~ 20秒の待ち時間
-      final waitTime = Random().nextInt(Parameter.kLocationCheckRandom) + Parameter.kLocationCheckFoundation;
-      await Future.delayed(Duration(seconds: waitTime));
-      print('$waitTime秒待ったので直線距離で測定');
-      final _distance = LatlongService().getDistance(data1: _beforeLocation, data2: _location);
+      // 待ち時間
+      final _waitTime = Random().nextInt(Parameter.kLocationCheckRandom) +
+          Parameter.kLocationCheckFoundation;
+
+      setState(() {
+        _testWaitTime = _waitTime;
+      });
+
+      await Future.delayed(Duration(seconds: _waitTime));
+      print('$_waitTime秒待ったので直線距離で測定');
+      final _distance = LatlongService()
+          .getDistance(data1: _beforeLocation, data2: _location);
+
+      setState(() {
+        _testDistance = _distance;
+        message = _distance >= Parameter.kOtosimonoDistance
+            ? 'オトシモノがありました！'
+            : 'オトシモノはありません';
+      });
+
       print('$_distance m移動しました');
       _beforeLocation = _location;
     }
