@@ -1,8 +1,10 @@
+import 'dart:math';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
+import 'package:yonakiproto/services/latlong_service.dart';
 
 class LocationMap extends StatefulWidget {
   @override
@@ -18,6 +20,9 @@ class _LocationMapState extends State<LocationMap> {
 
   // 現在位置の監視状況
   StreamSubscription _locationChangedListen;
+
+  // オトシモノシステム用の位置情報保存変数
+  LocationData _beforeLocation;
 
   @override
   void initState() {
@@ -77,5 +82,22 @@ class _LocationMapState extends State<LocationMap> {
 
   void _getLocation() async {
     _location = await _locationService.getLocation();
+    await Future.delayed(Duration(seconds: 5));
+    print('五秒たったのでbeforeLocationに代入');
+    _beforeLocation = _location;
+    print('beforeLocation: $_beforeLocation');
+    _loopCheckLocation();
+  }
+
+  void _loopCheckLocation() async {
+    while (true) {
+      // 10 ~ 20秒の待ち時間
+      final waitTime = Random().nextInt(5) + 5;
+      await Future.delayed(Duration(seconds: waitTime));
+      print('$waitTime秒待ったので直線距離で測定');
+      final _distance = LatlongService().getDistance(data1: _beforeLocation, data2: _location);
+      print('$_distance m移動しました');
+      _beforeLocation = _location;
+    }
   }
 }
