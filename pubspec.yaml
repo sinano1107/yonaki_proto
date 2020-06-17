@@ -14,6 +14,7 @@ dependencies:
   google_maps_flutter: ^0.5.28+1
   location: ^3.0.2
   latlong: ^0.6.1
+  flutter_unity_widget: ^0.1.6+8
 
 dev_dependencies:
   flutter_test:
