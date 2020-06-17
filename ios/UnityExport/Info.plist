@@ -29,6 +29,8 @@
       <key>NSAllowsArbitraryLoads</key>
       <true />
     </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>カメラ</string>
     <key>UILaunchStoryboardName~ipad</key>
     <string>LaunchScreen-iPad</string>
     <key>UILaunchStoryboardName~iphone</key>
@@ -41,6 +43,7 @@
     <array>
       <string>armv7</string>
       <string>metal</string>
+      <string>arkit</string>
     </array>
     <key>UIRequiresFullScreen</key>
     <true />
@@ -60,8 +63,8 @@
     <key>Unity_LoadingActivityIndicatorStyle</key>
     <integer>-1</integer>
     <key>UnityCloudProjectID</key>
-    <string />
+    <string></string>
     <key>UnityCrashSubmissionURL</key>
-    <string />
+    <string></string>
   </dict>
 </plist>
