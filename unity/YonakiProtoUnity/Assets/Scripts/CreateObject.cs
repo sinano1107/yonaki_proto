@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class CreateObject : MonoBehaviour
@@ -24,7 +25,7 @@ public class CreateObject : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             // 衝突時
-            if (raycastManager.Raycast(Input.GetTouch(0).position, hitResults))
+            if (raycastManager.Raycast(Input.GetTouch(0).position, hitResults, TrackableType.PlaneWithinPolygon))
             {
                 // 3Dオブジェクトの生成
                 Instantiate(objectPrefab, hitResults[0].pose.position, Quaternion.identity);

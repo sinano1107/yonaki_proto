@@ -1451,21 +1451,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateObject_Update_m6336FA5C95C3A6E413C
 		bool L_0 = Input_GetMouseButtonDown_m5AD76E22AA839706219AD86A4E0BE5276AF8E28A(0, /*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_0055;
+			goto IL_0054;
 		}
 	}
 	{
-		// if (raycastManager.Raycast(Input.GetTouch(0).position, hitResults))
+		// if (raycastManager.Raycast(Input.GetTouch(0).position, hitResults, TrackableType.PlaneWithinPolygon))
 		ARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7 * L_1 = __this->get_raycastManager_5();
 		Touch_tAACD32535FF3FE5DD91125E0B6987B93C68D2DE8  L_2 = Input_GetTouch_m8082D8EE3A187488373CE6AC66A70B0AAD7CC23F(0, /*hidden argument*/NULL);
 		V_0 = L_2;
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_3 = Touch_get_position_m2E60676112DA3628CF2DC76418A275C7FE521D8F((Touch_tAACD32535FF3FE5DD91125E0B6987B93C68D2DE8 *)(&V_0), /*hidden argument*/NULL);
 		List_1_tE22AC27B04238DDEA6B873A77D0222DA9B480F52 * L_4 = __this->get_hitResults_6();
 		NullCheck(L_1);
-		bool L_5 = ARRaycastManager_Raycast_mCBD053A6B0264981FCBF4244825A47F1DE0696F6(L_1, L_3, L_4, ((int32_t)127), /*hidden argument*/NULL);
+		bool L_5 = ARRaycastManager_Raycast_mCBD053A6B0264981FCBF4244825A47F1DE0696F6(L_1, L_3, L_4, 1, /*hidden argument*/NULL);
 		if (!L_5)
 		{
-			goto IL_0055;
+			goto IL_0054;
 		}
 	}
 	{
@@ -1483,7 +1483,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateObject_Update_m6336FA5C95C3A6E413C
 		Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_m4F397BCC6697902B40033E61129D4EA6FE93570F(L_6, L_10, L_11, /*hidden argument*/Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_m4F397BCC6697902B40033E61129D4EA6FE93570F_RuntimeMethod_var);
 	}
 
-IL_0055:
+IL_0054:
 	{
 		// }
 		return;
