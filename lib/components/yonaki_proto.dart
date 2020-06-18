@@ -7,7 +7,7 @@ class YonakiProto extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        LocationMap(),
+        LocationMap(showAR: showAR),
         Positioned(
           left:10,
           bottom: 10,

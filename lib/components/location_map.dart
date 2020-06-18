@@ -8,6 +8,12 @@ import 'package:yonakiproto/services/latlong_service.dart';
 import 'package:yonakiproto/services/parameter.dart';
 
 class LocationMap extends StatefulWidget {
+  final Function showAR;
+
+  LocationMap({
+    @required this.showAR,
+  });
+
   @override
   _LocationMapState createState() => _LocationMapState();
 }
@@ -130,9 +136,12 @@ class _LocationMapState extends State<LocationMap> {
 
       setState(() {
         _testDistance = _distance;
-        message = _distance >= Parameter.kOtosimonoDistance
-            ? 'オトシモノがありました！'
-            : 'オトシモノはありません';
+        if (_distance >= Parameter.kOtosimonoDistance) {
+          message = 'オトシモノがありました！';
+          widget.showAR(context);
+        } else {
+          message = 'オトシモノはありません';
+        }
       });
 
       print('$_distance m移動しました');
