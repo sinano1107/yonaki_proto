@@ -201,7 +201,7 @@ struct Exception_t;
 // System.Func`2<System.Exception,System.Boolean>
 struct Func_2_tC816C5FDED4A7372C449E7660CAB9F94E2AC12F8;
 // System.Func`2<System.Object,System.Boolean>
-struct Func_2_t4B4B1E74248F38404B56001A709D81142DE730CC;
+struct Func_2_t7EE965B791A606D187CCB69569A433D4CBB36879;
 // System.Func`3<System.Int32,System.IntPtr,System.Boolean>
 struct Func_3_tBD99633D8A18C43CC528ECE3F77E2F69900048A7;
 // System.IAsyncResult
@@ -937,6 +937,8 @@ public:
 	int32_t ____size_1;
 	// System.Int32 System.Collections.Stack::_version
 	int32_t ____version_2;
+	// System.Object System.Collections.Stack::_syncRoot
+	RuntimeObject * ____syncRoot_3;
 
 public:
 	inline static int32_t get_offset_of__array_0() { return static_cast<int32_t>(offsetof(Stack_t37723B68CC4FFD95F0F3D06A5D42D7DEE7569643, ____array_0)); }
@@ -962,6 +964,15 @@ public:
 	inline void set__version_2(int32_t value)
 	{
 		____version_2 = value;
+	}
+
+	inline static int32_t get_offset_of__syncRoot_3() { return static_cast<int32_t>(offsetof(Stack_t37723B68CC4FFD95F0F3D06A5D42D7DEE7569643, ____syncRoot_3)); }
+	inline RuntimeObject * get__syncRoot_3() const { return ____syncRoot_3; }
+	inline RuntimeObject ** get_address_of__syncRoot_3() { return &____syncRoot_3; }
+	inline void set__syncRoot_3(RuntimeObject * value)
+	{
+		____syncRoot_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____syncRoot_3), (void*)value);
 	}
 };
 
@@ -4825,7 +4836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tB5076FB1730C18188DBB208FD1B6870FC
 // !2 System.Func`3<System.Int32,System.IntPtr,System.Boolean>::Invoke(!0,!1)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Func_3_Invoke_mCD6DEEC09B4F1B42DD0FD4A8F58632B08EC66737_gshared (Func_3_tBD99633D8A18C43CC528ECE3F77E2F69900048A7 * __this, int32_t ___arg10, intptr_t ___arg21, const RuntimeMethod* method);
 // !1 System.Func`2<System.Object,System.Boolean>::Invoke(!0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Func_2_Invoke_mAE8945859643E5D0DADDF6194083A0E5F9E4133B_gshared (Func_2_t4B4B1E74248F38404B56001A709D81142DE730CC * __this, RuntimeObject * ___arg0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Func_2_Invoke_mE25788DCE25515291EAA06F55BEF30F9F27FBBA9_gshared (Func_2_t7EE965B791A606D187CCB69569A433D4CBB36879 * __this, RuntimeObject * ___arg0, const RuntimeMethod* method);
 
 // System.Void UnityEngine.Event::get_mousePosition_Injected(UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Event_get_mousePosition_Injected_mE71FE88F6E27190A534BD5862941E5887D6BE632 (Event_t187FF6A6B357447B83EC2064823EE0AEC5263210 * __this, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___ret0, const RuntimeMethod* method);
@@ -5214,7 +5225,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GUIUtility_ShouldRethrowException_mCF3B0
 // !1 System.Func`2<System.Exception,System.Boolean>::Invoke(!0)
 inline bool Func_2_Invoke_m9621506610C10C9E735B305E826ACEFF914422CD (Func_2_tC816C5FDED4A7372C449E7660CAB9F94E2AC12F8 * __this, Exception_t * ___arg0, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Func_2_tC816C5FDED4A7372C449E7660CAB9F94E2AC12F8 *, Exception_t *, const RuntimeMethod*))Func_2_Invoke_mAE8945859643E5D0DADDF6194083A0E5F9E4133B_gshared)(__this, ___arg0, method);
+	return ((  bool (*) (Func_2_tC816C5FDED4A7372C449E7660CAB9F94E2AC12F8 *, Exception_t *, const RuntimeMethod*))Func_2_Invoke_mE25788DCE25515291EAA06F55BEF30F9F27FBBA9_gshared)(__this, ___arg0, method);
 }
 // System.Void UnityEngine.GUIUtility::set_guiIsExiting(System.Boolean)
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void GUIUtility_set_guiIsExiting_m16D5DFFB64483BC588CA6BEA0FAA618E4A227960_inline (bool ___value0, const RuntimeMethod* method);
@@ -10791,7 +10802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUILayoutUtility_Begin_m6876A33199599688
 		NullCheck(L_10);
 		GenericStack_tC59D21E8DBC50F3C608479C942200AC44CA2D5BC * L_11 = L_10->get_layoutGroups_1();
 		NullCheck(L_11);
-		VirtActionInvoker0::Invoke(9 /* System.Void System.Collections.Stack::Clear() */, L_11);
+		VirtActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_11);
 		LayoutCache_t0D14FE6139444D164ECA5D31E39E625D80077468 * L_12 = ((GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_il2cpp_TypeInfo_var))->get_current_2();
 		NullCheck(L_12);
 		GenericStack_tC59D21E8DBC50F3C608479C942200AC44CA2D5BC * L_13 = L_12->get_layoutGroups_1();
@@ -10799,7 +10810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUILayoutUtility_Begin_m6876A33199599688
 		NullCheck(L_14);
 		GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601 * L_15 = L_14->get_topLevel_0();
 		NullCheck(L_13);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(15 /* System.Void System.Collections.Stack::Push(System.Object) */, L_13, L_15);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_13, L_15);
 		LayoutCache_t0D14FE6139444D164ECA5D31E39E625D80077468 * L_16 = ((GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_il2cpp_TypeInfo_var))->get_current_2();
 		LayoutCache_t0D14FE6139444D164ECA5D31E39E625D80077468 * L_17 = V_0;
 		GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601 * L_18 = (GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601 *)il2cpp_codegen_object_new(GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601_il2cpp_TypeInfo_var);
@@ -10920,7 +10931,7 @@ IL_0070:
 		NullCheck(L_21);
 		GenericStack_tC59D21E8DBC50F3C608479C942200AC44CA2D5BC * L_22 = L_21->get_layoutGroups_1();
 		NullCheck(L_22);
-		VirtActionInvoker0::Invoke(9 /* System.Void System.Collections.Stack::Clear() */, L_22);
+		VirtActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_22);
 		LayoutCache_t0D14FE6139444D164ECA5D31E39E625D80077468 * L_23 = ((GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_il2cpp_TypeInfo_var))->get_current_2();
 		NullCheck(L_23);
 		GenericStack_tC59D21E8DBC50F3C608479C942200AC44CA2D5BC * L_24 = L_23->get_layoutGroups_1();
@@ -10928,7 +10939,7 @@ IL_0070:
 		NullCheck(L_25);
 		GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601 * L_26 = L_25->get_topLevel_0();
 		NullCheck(L_24);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(15 /* System.Void System.Collections.Stack::Push(System.Object) */, L_24, L_26);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_24, L_26);
 		LayoutCache_t0D14FE6139444D164ECA5D31E39E625D80077468 * L_27 = ((GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_tFBB1F6AB7CF109D40F923B9AB1F5D7CDF8EEB62E_il2cpp_TypeInfo_var))->get_current_2();
 		LayoutCache_t0D14FE6139444D164ECA5D31E39E625D80077468 * L_28 = V_0;
 		GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601 * L_29 = (GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601 *)il2cpp_codegen_object_new(GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601_il2cpp_TypeInfo_var);
@@ -11416,7 +11427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCache__ctor_mF66D53540321BFD98CA89
 		GenericStack_tC59D21E8DBC50F3C608479C942200AC44CA2D5BC * L_3 = __this->get_layoutGroups_1();
 		GUILayoutGroup_tCC791055AD03074C1257B699304E4B45C97DE601 * L_4 = __this->get_topLevel_0();
 		NullCheck(L_3);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(15 /* System.Void System.Collections.Stack::Push(System.Object) */, L_3, L_4);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_3, L_4);
 		return;
 	}
 }
@@ -14568,7 +14579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GUITargetAttribute_GetGUITargetAttrVa
 	{
 		MethodInfo_t * L_5 = V_0;
 		NullCheck(L_5);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_6 = VirtFuncInvoker1< ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, bool >::Invoke(10 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Boolean) */, L_5, (bool)1);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_6 = VirtFuncInvoker1< ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, bool >::Invoke(11 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Boolean) */, L_5, (bool)1);
 		V_2 = L_6;
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_7 = V_2;
 		V_3 = (bool)((!(((RuntimeObject*)(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_7) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
@@ -15140,7 +15151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIUtility_ResetGlobalState_m192C9FAE2A4
 		GUI_set_changed_m8BDF5085BBFDF8E61C12926C8E51C67B22B629AE((bool)0, /*hidden argument*/NULL);
 		GenericStack_tC59D21E8DBC50F3C608479C942200AC44CA2D5BC * L_0 = GUI_get_scrollViewStates_m2FAC333F84B90E4F1E1ED5FC8651DC8C4C30B7AF_inline(/*hidden argument*/NULL);
 		NullCheck(L_0);
-		VirtActionInvoker0::Invoke(9 /* System.Void System.Collections.Stack::Clear() */, L_0);
+		VirtActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_0);
 		return;
 	}
 }

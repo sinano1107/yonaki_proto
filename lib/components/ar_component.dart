@@ -16,7 +16,10 @@ class _ARComponentState extends State<ARComponent> {
     return Column(
       children: <Widget>[
         Expanded(
-          child: UnityWidget(onUnityViewCreated: onUnityCreated),
+          child: UnityWidget(
+            onUnityViewCreated: onUnityCreated,
+            onUnityMessage: onUnityMessage,
+          ),
           flex: 10,
         ),
         Expanded(
@@ -37,6 +40,10 @@ class _ARComponentState extends State<ARComponent> {
   void sendMessageToUnity() {
     _unityWidgetController.postMessage(
         'GameDirector', 'EditText', 'Flutterからのメッセージ');
+  }
+
+  void onUnityMessage(controller, message) {
+    print('Unityからのメッセージ: ${message.toString()}');
   }
 
   void onUnityCreated(controller) {

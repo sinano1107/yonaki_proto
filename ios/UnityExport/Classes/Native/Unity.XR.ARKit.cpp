@@ -11250,7 +11250,7 @@ IL_001f:
 		NullCheck(L_5);
 		Type_t * L_6 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_5, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_6);
+		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_6);
 		String_t* L_8 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_7, _stringLiteralE1B88ED34E81AD0E7C2578F000E97BD273C2A39C, /*hidden argument*/NULL);
 		ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 * L_9 = (ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 *)il2cpp_codegen_object_new(ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var);
 		ArgumentException__ctor_m9A85EF7FEFEC21DDD525A67E831D77278E5165B7(L_9, L_8, /*hidden argument*/NULL);
@@ -11499,7 +11499,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitProvider_Start_m8300435BD84393E9FB7
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_2 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_1, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_2);
+		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_2);
 		String_t* L_4 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(_stringLiteral9F7ED32A201BAB6D11F7BE88B9335973D93DE3F5, L_3, _stringLiteralF24426E3D6B85604333F16DBE93F64A51E425B59, /*hidden argument*/NULL);
 		InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 * L_5 = (InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 *)il2cpp_codegen_object_new(InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1_il2cpp_TypeInfo_var);
 		InvalidOperationException__ctor_m72027D5F1D513C25C05137E203EEED8FD8297706(L_5, L_4, /*hidden argument*/NULL);
@@ -11538,7 +11538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitProvider_Stop_m01A1F42A335C1EF0B9F3
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_2 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_1, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_2);
+		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_2);
 		String_t* L_4 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(_stringLiteral9F7ED32A201BAB6D11F7BE88B9335973D93DE3F5, L_3, _stringLiteralF24426E3D6B85604333F16DBE93F64A51E425B59, /*hidden argument*/NULL);
 		InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 * L_5 = (InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 *)il2cpp_codegen_object_new(InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1_il2cpp_TypeInfo_var);
 		InvalidOperationException__ctor_m72027D5F1D513C25C05137E203EEED8FD8297706(L_5, L_4, /*hidden argument*/NULL);
@@ -11600,7 +11600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackableChanges_1_tADA077C1D8520E93DBAF760C4
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_2 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_1, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_2);
+		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_2);
 		String_t* L_4 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(_stringLiteral9F7ED32A201BAB6D11F7BE88B9335973D93DE3F5, L_3, _stringLiteralF24426E3D6B85604333F16DBE93F64A51E425B59, /*hidden argument*/NULL);
 		InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 * L_5 = (InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 *)il2cpp_codegen_object_new(InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1_il2cpp_TypeInfo_var);
 		InvalidOperationException__ctor_m72027D5F1D513C25C05137E203EEED8FD8297706(L_5, L_4, /*hidden argument*/NULL);

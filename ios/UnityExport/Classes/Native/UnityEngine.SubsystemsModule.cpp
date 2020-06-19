@@ -1479,7 +1479,7 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m507C9149FF7F
 // !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * List_1_get_Item_mFDB8AD680C600072736579BBF5F38F7416396588_gshared_inline (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t ___index0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::RemoveAt(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m1EC5117AD814B97460F8F95D49A428032FE37CBF_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t ___index0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m3CAF82E0FF61CD84E251E0F7231BBB867C9755C2_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t ___index0, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m908B647BB9F807676DACE34E3E73475C3C3751D4_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, RuntimeObject * ___item0, const RuntimeMethod* method);
 
@@ -1607,7 +1607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_mEE8D9FD2DFE312BBAA8B
 // System.Void System.Collections.Generic.List`1<UnityEngine.ISubsystem>::RemoveAt(System.Int32)
 inline void List_1_RemoveAt_mCD3BAE6403566200AD586DB0D945EBCC297B83B8 (List_1_t0BCF732A4510C6CF37DC1C9E7BCE50D093837B66 * __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t0BCF732A4510C6CF37DC1C9E7BCE50D093837B66 *, int32_t, const RuntimeMethod*))List_1_RemoveAt_m1EC5117AD814B97460F8F95D49A428032FE37CBF_gshared)(__this, ___index0, method);
+	((  void (*) (List_1_t0BCF732A4510C6CF37DC1C9E7BCE50D093837B66 *, int32_t, const RuntimeMethod*))List_1_RemoveAt_m3CAF82E0FF61CD84E251E0F7231BBB867C9755C2_gshared)(__this, ___index0, method);
 }
 // System.Void System.Collections.Generic.List`1<UnityEngine.ISubsystem>::.ctor()
 inline void List_1__ctor_mA1E3D563A57F0FF4BAA5B114471339069AF96580 (List_1_t0BCF732A4510C6CF37DC1C9E7BCE50D093837B66 * __this, const RuntimeMethod* method)

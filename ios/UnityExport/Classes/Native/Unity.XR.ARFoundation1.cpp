@@ -541,8 +541,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1__ctor_m5ABA618C3C3A06B951D938
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1__ctor_m670C8FB2EA08BD79FA732EDD0DE2605ED72FC2D7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_get_IsCreated_mB07CA7DE7D3ECCE1EAA419C6A292067FA9ABB458_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeSlice_1_op_Implicit_m76DC514127CD9E73556E31C536A4CD606BCB8534_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mAD1BFA560688F8A5C246FB146A0333E7D8EF4446_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_mF81517E10E958E9C1A24CE7AD59940CFC8AA64E5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_Value_mA325C15E3EC535556E213B77FE825337112B77D3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectsOfType_TisARSession_tFD6F1BD76D4C003B8141D9B6255B904D8C5036AB_mFE7C0F51E18857F4522BAD4DD66DF6FDD93C3CBC_RuntimeMethod_var;
@@ -7589,7 +7589,7 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m507C9149FF7F
 // TSubsystemDescriptor UnityEngine.XR.ARFoundation.SubsystemLifecycleManager`2<System.Object,System.Object>::get_descriptor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * SubsystemLifecycleManager_2_get_descriptor_m838B61F4A4E192402B0CB4BBDF223E105CA65E92_gshared (SubsystemLifecycleManager_2_t5D1A501CD473D1DB7DD9763711AFE091EA6665C9 * __this, const RuntimeMethod* method);
 // System.Void System.Nullable`1<System.Int32>::.ctor(!0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_gshared (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_gshared (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Void System.Action`1<UnityEngine.XR.ARFoundation.ARSessionStateChangedEventArgs>::Invoke(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m588298D1CA0383E663E3FF5B4D0FDBED75EF7D60_gshared (Action_1_t675D80EB5B146D48758125B0CB33D213FDAB08CD * __this, ARSessionStateChangedEventArgs_tAB726C94F3164280811C27B77D92B0189C302082  ___obj0, const RuntimeMethod* method);
 // !!0[] UnityEngine.Object::FindObjectsOfType<System.Object>()
@@ -8066,9 +8066,9 @@ inline XRSessionSubsystem_t9B9C16B4BDB611559FB6FA728BE399001E47EFF0 * SubsystemL
 // System.Int32 UnityEngine.XR.ARSubsystems.XRSessionSubsystem::get_frameRate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRSessionSubsystem_get_frameRate_m9C029A08839E039C3459DF5CE4A5E5CFAD3DC7DE (XRSessionSubsystem_t9B9C16B4BDB611559FB6FA728BE399001E47EFF0 * __this, const RuntimeMethod* method);
 // System.Void System.Nullable`1<System.Int32>::.ctor(!0)
-inline void Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834 (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method)
+inline void Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2 (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method)
 {
-	((  void (*) (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB *, int32_t, const RuntimeMethod*))Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_gshared)(__this, ___value0, method);
+	((  void (*) (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB *, int32_t, const RuntimeMethod*))Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_gshared)(__this, ___value0, method);
 }
 // System.Void UnityEngine.XR.ARFoundation.ARSession::UpdateNotTrackingReason()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARSession_UpdateNotTrackingReason_mADE6822B377DD991F1F840276F50E855C382F1EA (const RuntimeMethod* method);
@@ -11187,7 +11187,7 @@ IL_001e:
 		int32_t L_5 = XRSessionSubsystem_get_frameRate_m9C029A08839E039C3459DF5CE4A5E5CFAD3DC7DE(L_4, /*hidden argument*/NULL);
 		Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB  L_6;
 		memset((&L_6), 0, sizeof(L_6));
-		Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834((&L_6), L_5, /*hidden argument*/Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_RuntimeMethod_var);
+		Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2((&L_6), L_5, /*hidden argument*/Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_RuntimeMethod_var);
 		return L_6;
 	}
 }

@@ -10,6 +10,9 @@ public class GameDirector : MonoBehaviour
     public void EditText(string newText)
     {
         this.text.GetComponent<Text>().text = newText;
+        
+        // Flutterにも座標を送信
+        UnityMessageManager.Instance.SendMessageToFlutter(newText);
     }
 
     void Start()

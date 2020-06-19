@@ -915,8 +915,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m276CF645075C7ECBF31D42DE920C0A4
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m50C0D1F69B2EF31137658E2F052EBBAC7BF82771_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m64CF5AF1AECAE50D2A7ECE86F78E0AFBAADB16B0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mEEE99D8DE85276F09690171A6AA02F30647FD964_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m0B6A7366C5386991AB01BAFF1FACE2DC5BAC410A_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m4922931CB6A2D5FF3678089D45EDEDB901DA2EBC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m803446BB40C87F686CDD156158EDA1C02D8138C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m93B8AA590495DE89437921B17F52567684B2C3FC_RuntimeMethod_var;
@@ -939,12 +939,12 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mA7F9F92F641CEECFD9D8CFDC66756
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mD172D8F38F264D579B6C914A3A26D3D87A850E4C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mD40E15E48D8715A0C6EE7BD605D719A050BD17F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mE6FFB219480582369513E4A1F005A2240DAFB781_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m0AEC7165BCDA1870BB35D5B1BE47F1F0EAE89C76_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m3803071742D5A878B543FD23693DE50A1C9AEE3C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m3D9BE6624F6627115C60F14B9D0EB2A05AAF86C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m4C5D000292EEF28E75ACECA42D351B781698141B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m4EB04B009BA07E6F8609DCCB443A54301BCA7DFF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m4F76E516505E5D6C0E1FCFB36E1B2BDA7FCC6472_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m52793036D5E41E8E25DCC5C033380C44D7596903_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m58AFC034BC13285ADE6ABCC93A614D3CC7DCAF4B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m74B70E43FC8ECC97A5AFA52D53ECE859B753B184_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m96EAACDF6B543193FB1E04038FF3F3E64BA56F09_RuntimeMethod_var;
@@ -998,7 +998,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetHashCode_m94232DE86EB0E6B3560
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetHashCode_m9BD639104982B4D252ABA08B66139F16C2575057_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetHashCode_mA75A83B0C98A0EB37489D8FF02D0DCCA5B1691A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetHashCode_mF5BD26764BBB7AC14BD9B61541EDD3B5F9074A1D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_mD65884636E94AF88C2745255BBE130A1B64BA294_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_mEB3794454EFFF1F9B06CE0537D9971D6B4112E08_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m0F402F11660575B04880DE4560A05D12C3923C3A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m155EE9CD82E68CFED6D89C8E040341A4E06C64E5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m2D504C1C6569361F4C97091273537C7007D736ED_RuntimeMethod_var;
@@ -15522,13 +15522,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mD3154885E88D449C69AD9D
 // System.Boolean System.Nullable`1<System.Boolean>::get_HasValue()
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m275A31438FCDAEEE039E95D887684E04FD6ECE2B_gshared_inline (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 * __this, const RuntimeMethod* method);
 // !0 System.Nullable`1<System.Boolean>::GetValueOrDefault()
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_mD65884636E94AF88C2745255BBE130A1B64BA294_gshared_inline (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_mEB3794454EFFF1F9B06CE0537D9971D6B4112E08_gshared_inline (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m129DEF8A66683189ED44B21496135824743EF617_gshared (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method);
 // System.Void System.Action`1<UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m739CC09A0C6288EBBA35AA1E22A850BEFE107A22_gshared (Action_1_t386B526A237C5426A1502ADF2690D01DCC513454 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
 // System.Void System.Nullable`1<System.Int32Enum>::.ctor(!0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mDEE05C5C48FC098E2DEB2DC35A030FCE227F207E_gshared (Nullable_1_tBCA4780CE8E9555A53CF0BA48AF742DA998C0833 * __this, int32_t ___value0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m5C28B34DE8C6D3A1E136828428C71543A08B32D3_gshared (Nullable_1_tBCA4780CE8E9555A53CF0BA48AF742DA998C0833 * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Boolean System.Nullable`1<System.Int32Enum>::get_HasValue()
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m58742F2DBAEDAA6626C115F9E99209C8F4D8F195_gshared_inline (Nullable_1_tBCA4780CE8E9555A53CF0BA48AF742DA998C0833 * __this, const RuntimeMethod* method);
 // !0 System.Nullable`1<System.Int32Enum>::get_Value()
@@ -15564,7 +15564,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Nullable_1_GetHashCode_mF5BD26764BBB7
 // System.Boolean System.Nullable`1<System.Int64>::get_HasValue()
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m93455125DECBC2A055273524A11F1D2A51C707BE_gshared_inline (Nullable_1_t9736900C35D60187C67DF38254F77E942266080F * __this, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Count()
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m52793036D5E41E8E25DCC5C033380C44D7596903_gshared_inline (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m0AEC7165BCDA1870BB35D5B1BE47F1F0EAE89C76_gshared_inline (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method);
 // System.Boolean System.Nullable`1<System.Int64>::Equals(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Nullable_1_Equals_mA86B1F74A7B7762A99D9FD3186A20EE939A71B69_gshared (Nullable_1_t9736900C35D60187C67DF38254F77E942266080F * __this, RuntimeObject * ___other0, const RuntimeMethod* method);
 // System.Boolean System.Nullable`1<UnityEngine.Matrix4x4>::Equals(System.Object)
@@ -15614,7 +15614,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mEF870D251646A15B2BDC6D
 // System.Void System.Collections.Generic.List`1<System.Object>::Clear()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Clear_mC5CFC6C9F3007FC24FE020198265D4B5B0659FFC_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Int32>::Clear()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6_gshared (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477_gshared (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_m6930161974C7504C80F52EC379EF012387D43138_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, RuntimeObject * ___item0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Int32>::Add(!0)
@@ -16060,9 +16060,9 @@ inline bool Nullable_1_get_HasValue_m275A31438FCDAEEE039E95D887684E04FD6ECE2B_in
 	return ((  bool (*) (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 *, const RuntimeMethod*))Nullable_1_get_HasValue_m275A31438FCDAEEE039E95D887684E04FD6ECE2B_gshared_inline)(__this, method);
 }
 // !0 System.Nullable`1<System.Boolean>::GetValueOrDefault()
-inline bool Nullable_1_GetValueOrDefault_mD65884636E94AF88C2745255BBE130A1B64BA294_inline (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 * __this, const RuntimeMethod* method)
+inline bool Nullable_1_GetValueOrDefault_mEB3794454EFFF1F9B06CE0537D9971D6B4112E08_inline (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 * __this, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 *, const RuntimeMethod*))Nullable_1_GetValueOrDefault_mD65884636E94AF88C2745255BBE130A1B64BA294_gshared_inline)(__this, method);
+	return ((  bool (*) (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 *, const RuntimeMethod*))Nullable_1_GetValueOrDefault_mEB3794454EFFF1F9B06CE0537D9971D6B4112E08_gshared_inline)(__this, method);
 }
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Camera>()
 inline Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * Component_GetComponent_TisCamera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34_mB090F51A34716700C0F4F1B08F9330C6F503DB9E (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
@@ -16104,7 +16104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Camera_get_clearFlags_m1D02BA1ABD7310
 // System.Void System.Nullable`1<UnityEngine.CameraClearFlags>::.ctor(!0)
 inline void Nullable_1__ctor_m6AC67F847A90F28858A2432B79CC578FF1DAA9A9 (Nullable_1_t9739B0A971606CB7B2477176D8427977C52CDDC2 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
-	((  void (*) (Nullable_1_t9739B0A971606CB7B2477176D8427977C52CDDC2 *, int32_t, const RuntimeMethod*))Nullable_1__ctor_mDEE05C5C48FC098E2DEB2DC35A030FCE227F207E_gshared)(__this, ___value0, method);
+	((  void (*) (Nullable_1_t9739B0A971606CB7B2477176D8427977C52CDDC2 *, int32_t, const RuntimeMethod*))Nullable_1__ctor_m5C28B34DE8C6D3A1E136828428C71543A08B32D3_gshared)(__this, ___value0, method);
 }
 // System.Void UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_clearFlags_m805DFBD136AA3E1E46A2E61441965D174E87FE50 (Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * __this, int32_t ___value0, const RuntimeMethod* method);
@@ -16311,9 +16311,9 @@ inline bool Nullable_1_get_HasValue_m93455125DECBC2A055273524A11F1D2A51C707BE_in
 	return ((  bool (*) (Nullable_1_t9736900C35D60187C67DF38254F77E942266080F *, const RuntimeMethod*))Nullable_1_get_HasValue_m93455125DECBC2A055273524A11F1D2A51C707BE_gshared_inline)(__this, method);
 }
 // System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Count()
-inline int32_t List_1_get_Count_m52793036D5E41E8E25DCC5C033380C44D7596903_inline (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method)
+inline int32_t List_1_get_Count_m0AEC7165BCDA1870BB35D5B1BE47F1F0EAE89C76_inline (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 *, const RuntimeMethod*))List_1_get_Count_m52793036D5E41E8E25DCC5C033380C44D7596903_gshared_inline)(__this, method);
+	return ((  int32_t (*) (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 *, const RuntimeMethod*))List_1_get_Count_m0AEC7165BCDA1870BB35D5B1BE47F1F0EAE89C76_gshared_inline)(__this, method);
 }
 // System.String UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ARCameraFrameEventArgs_ToString_mDF4038AD013A1FFAF03364EC3D9C67BC68CBF023 (ARCameraFrameEventArgs_t25F661E15E542829DB3CAAD158FED01CC8874672 * __this, const RuntimeMethod* method);
@@ -16538,9 +16538,9 @@ inline void List_1_Clear_m803446BB40C87F686CDD156158EDA1C02D8138C1 (List_1_tD84B
 	((  void (*) (List_1_tD84B8B60A0D0578F20C5B6EE527F0C57547C88B8 *, const RuntimeMethod*))List_1_Clear_mC5CFC6C9F3007FC24FE020198265D4B5B0659FFC_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<System.Int32>::Clear()
-inline void List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6 (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method)
+inline void List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477 (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 *, const RuntimeMethod*))List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6_gshared)(__this, method);
+	((  void (*) (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 *, const RuntimeMethod*))List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477_gshared)(__this, method);
 }
 // UnityEngine.Texture2D UnityEngine.XR.ARFoundation.ARTextureInfo::get_texture()
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * ARTextureInfo_get_texture_m7E8D057CBB19B211FCC4D472F1B37551BF49040C_inline (ARTextureInfo_tD8D9A987C9853BD3F681D727A202D2618A6CEEE0 * __this, const RuntimeMethod* method);
@@ -19601,7 +19601,7 @@ IL_0033:
 
 IL_003f:
 	{
-		bool L_9 = Nullable_1_GetValueOrDefault_mD65884636E94AF88C2745255BBE130A1B64BA294_inline((Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 *)(&V_0), /*hidden argument*/Nullable_1_GetValueOrDefault_mD65884636E94AF88C2745255BBE130A1B64BA294_RuntimeMethod_var);
+		bool L_9 = Nullable_1_GetValueOrDefault_mEB3794454EFFF1F9B06CE0537D9971D6B4112E08_inline((Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 *)(&V_0), /*hidden argument*/Nullable_1_GetValueOrDefault_mEB3794454EFFF1F9B06CE0537D9971D6B4112E08_RuntimeMethod_var);
 		return L_9;
 	}
 }
@@ -21244,7 +21244,7 @@ IL_00b7:
 	{
 		List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * L_32 = ARCameraFrameEventArgs_get_propertyNameIds_m35A321FDF6F05EB80E68C74492CAAFA2438F72A7_inline((ARCameraFrameEventArgs_t25F661E15E542829DB3CAAD158FED01CC8874672 *)__this, /*hidden argument*/NULL);
 		NullCheck(L_32);
-		int32_t L_33 = List_1_get_Count_m52793036D5E41E8E25DCC5C033380C44D7596903_inline(L_32, /*hidden argument*/List_1_get_Count_m52793036D5E41E8E25DCC5C033380C44D7596903_RuntimeMethod_var);
+		int32_t L_33 = List_1_get_Count_m0AEC7165BCDA1870BB35D5B1BE47F1F0EAE89C76_inline(L_32, /*hidden argument*/List_1_get_Count_m0AEC7165BCDA1870BB35D5B1BE47F1F0EAE89C76_RuntimeMethod_var);
 		G_B8_0 = L_33;
 		G_B8_1 = G_B6_0;
 		G_B8_2 = G_B6_1;
@@ -22625,7 +22625,7 @@ IL_0114:
 		// s_PropertyIds.Clear();
 		List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * L_29 = ((ARCameraManager_tCA7C4E3CE79EB88A8AA6D14B4D8F2FA991CBAA5A_StaticFields*)il2cpp_codegen_static_fields_for(ARCameraManager_tCA7C4E3CE79EB88A8AA6D14B4D8F2FA991CBAA5A_il2cpp_TypeInfo_var))->get_s_PropertyIds_12();
 		NullCheck(L_29);
-		List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6(L_29, /*hidden argument*/List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6_RuntimeMethod_var);
+		List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477(L_29, /*hidden argument*/List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477_RuntimeMethod_var);
 		// foreach (var textureInfo in m_TextureInfos)
 		List_1_t5E912E12D6E5C0A84524589AC9B50257D1864C28 * L_30 = __this->get_m_TextureInfos_13();
 		NullCheck(L_30);
@@ -26588,7 +26588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRInputSubsystem_t9B5A5AD5B134D55762D1FA5E425
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_10 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_10);
 		NullCheck(L_8);
 		ArrayElementTypeCheck (L_8, L_11);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_11);
@@ -32620,7 +32620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARPlaneMeshGenerators_GenerateIndices_m7
 		// indices.Clear();
 		List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * L_0 = ___indices0;
 		NullCheck(L_0);
-		List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6(L_0, /*hidden argument*/List_1_Clear_m33B9E3FC1A7C9DF40DF154F08DF7D71F69FDCBD6_RuntimeMethod_var);
+		List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477(L_0, /*hidden argument*/List_1_Clear_m06BA343FB4E149EB045D8D2603E1AD239E1E4477_RuntimeMethod_var);
 		// var numBoundaryVertices = convexPolygon.Count - 1;
 		List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * L_1 = ___convexPolygon1;
 		NullCheck(L_1);
@@ -38051,7 +38051,7 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m275A3143
 		return L_0;
 	}
 }
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_mD65884636E94AF88C2745255BBE130A1B64BA294_gshared_inline (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_mEB3794454EFFF1F9B06CE0537D9971D6B4112E08_gshared_inline (Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 * __this, const RuntimeMethod* method)
 {
 	{
 		bool L_0 = (bool)__this->get_value_0();
@@ -38130,7 +38130,7 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m93455125
 		return L_0;
 	}
 }
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m52793036D5E41E8E25DCC5C033380C44D7596903_gshared_inline (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m0AEC7165BCDA1870BB35D5B1BE47F1F0EAE89C76_gshared_inline (List_1_tE1526161A558A17A39A8B69D8EEF3801393B6226 * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = (int32_t)__this->get__size_2();
