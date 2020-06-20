@@ -16,11 +16,12 @@ public class CreateObject : MonoBehaviour
 
     void DropOtosimono(float y)
     {
-        float x = Random.Range(0.0f, 1.0f);
-        float z = Random.Range(0.0f, 1.0f);
+        float x = Random.Range(-1.0f, 1.0f);
+        float z = Random.Range(-1.0f, 1.0f);
 
         // 設置した座標をUIに表示
-        this.director.GetComponent<GameDirector>().EditText($"{x}, {y}, {z}にオトシモノを設置します");
+        this.director.GetComponent<GameDirector>().EditText(
+            $"{x.ToString()}, {y.ToString()}, {z.ToString()}にオトシモノを設置します");
 
         // オトシモノの生成
         Instantiate(objectPrefab, new Vector3(x, y, z), Quaternion.identity);
