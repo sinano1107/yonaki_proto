@@ -2495,6 +2495,15 @@ public:
 };
 
 
+// UnityEngine.Random
+struct  Random_tA8F80789DCC0FD1EDC77845D34F1D1A148DC9CCD  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // UnityEngine.Rendering.CameraEventUtils
 struct  CameraEventUtils_t57B5974E504B130BFD48E40910BD0A5A3E4790BB  : public RuntimeObject
 {
@@ -18068,6 +18077,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quaternion_LookRotation_Injected_m59A460
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Quaternion_LookRotation_Injected_m59A46014572ACB8F5C8A377B773D12EACCB53D4A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Quaternion::LookRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)");
 	_il2cpp_icall_func(___forward0, ___upwards1, ___ret2);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Single UnityEngine.Random::Range(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384 (float ___min0, float ___max1, const RuntimeMethod* method)
+{
+	typedef float (*Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384_ftn) (float, float);
+	static Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Random::Range(System.Single,System.Single)");
+	float retVal = _il2cpp_icall_func(___min0, ___max1);
+	return retVal;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

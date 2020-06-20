@@ -1656,6 +1656,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Quaternion
 
+	//Start Registrations for type : UnityEngine.Random
+
+		//System.Single UnityEngine.Random::Range(System.Single,System.Single)
+		void Register_UnityEngine_Random_Range();
+		Register_UnityEngine_Random_Range();
+
+	//End Registrations for type : UnityEngine.Random
+
 	//Start Registrations for type : UnityEngine.RectOffset
 
 		//System.Int32 UnityEngine.RectOffset::get_bottom()

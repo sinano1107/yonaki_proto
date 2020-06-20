@@ -14,6 +14,18 @@ public class CreateObject : MonoBehaviour
 
     GameObject director;
 
+    void DropOtosimono(float y)
+    {
+        float x = Random.Range(0.0f, 1.0f);
+        float z = Random.Range(0.0f, 1.0f);
+
+        // 設置した座標をUIに表示
+        this.director.GetComponent<GameDirector>().EditText($"{x}, {y}, {z}にオトシモノを設置します");
+
+        // オトシモノの生成
+        Instantiate(objectPrefab, new Vector3(x, y, z), Quaternion.identity);
+    }
+
     // 初期化
     void Awake()
     {
@@ -34,11 +46,7 @@ public class CreateObject : MonoBehaviour
             // 衝突時
             if (raycastManager.Raycast(Input.GetTouch(0).position, hitResults, TrackableType.PlaneWithinPolygon))
             {
-                // 座標をUIに表示
-                this.director.GetComponent<GameDirector>().EditText(hitResults[0].pose.position.ToString());
-
-                // 3Dオブジェクトの生成
-                Instantiate(objectPrefab, hitResults[0].pose.position, Quaternion.identity);
+                DropOtosimono(hitResults[0].pose.position.y);
             }
         }
     }
