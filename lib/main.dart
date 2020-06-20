@@ -3,13 +3,9 @@ import 'components/ar_component.dart';
 import 'components/yonaki_proto.dart';
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
-    appBar: AppBar(
-      title: Text('位置情報を取得'),
-    ),
-    body: YonakiProto(),
-  ),
+  initialRoute: YonakiProto.id,
   routes: {
     ARComponent.id: (context) => ARComponent(),
+    YonakiProto.id: (context) => YonakiProto(),
   },
 ));
