@@ -13,18 +13,27 @@ public class CreateObject : MonoBehaviour
     List<ARRaycastHit> hitResults = new List<ARRaycastHit>();
 
     GameObject director;
+    GameObject panel;
 
     void DropOtosimono(float y)
     {
         float x = Random.Range(-1.0f, 1.0f);
         float z = Random.Range(-1.0f, 1.0f);
 
-        // 設置した座標をUIに表示
-        this.director.GetComponent<GameDirector>().EditText(
-            $"{x.ToString()}, {y.ToString()}, {z.ToString()}にオトシモノを設置します");
+        FadeController fadeController = this.panel.GetComponent<FadeController>();
 
-        // オトシモノの生成
-        Instantiate(objectPrefab, new Vector3(x, y, z), Quaternion.identity);
+        // フェードアウト後のアクションを定義
+        fadeController.action = () => {
+            // 設置する座標をUIに表示
+            this.director.GetComponent<GameDirector>().EditText(
+                $"{x.ToString("F1")}, {y.ToString("F1")}, {z.ToString("F1")}");
+            
+            // オトシモノの生成
+            Instantiate(objectPrefab, new Vector3(x, y, z), Quaternion.identity);
+        };
+
+        // フェードアウト
+        fadeController.isFadeOut = true;
     }
 
     // 初期化
@@ -36,6 +45,7 @@ public class CreateObject : MonoBehaviour
     void Start()
     {
         this.director = GameObject.Find("GameDirector");
+        this.panel = GameObject.Find("Panel");
     }
 
     // 更新毎に呼ばれる
