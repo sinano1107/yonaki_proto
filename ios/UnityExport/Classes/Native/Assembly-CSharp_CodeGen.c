@@ -97,10 +97,10 @@ extern void UnityMessageManager_onMessage_mD1704644A461EFD311809BB58F82D36898713
 extern void UnityMessageManager_onFlutterMessage_m5BEF69E2E3423B8F8ACCB39BBF8286128B4C2B5A ();
 // 0x0000002B System.Void UnityMessageManager::.ctor()
 extern void UnityMessageManager__ctor_mFB3651A2237E489ED8746D5B8FC5B5AB95FE7CE7 ();
-// 0x0000002C System.Void CreateObject_<>c__DisplayClass5_0::.ctor()
-extern void U3CU3Ec__DisplayClass5_0__ctor_m45450698DAF1BFA708D18C9ABCE2CBF0C7F19B69 ();
-// 0x0000002D System.Void CreateObject_<>c__DisplayClass5_0::<DropOtosimono>b__0()
-extern void U3CU3Ec__DisplayClass5_0_U3CDropOtosimonoU3Eb__0_mAB0F9BEDE4E262A1347E821BE0B9295F65C3D629 ();
+// 0x0000002C System.Void CreateObject_<>c__DisplayClass6_0::.ctor()
+extern void U3CU3Ec__DisplayClass6_0__ctor_m6D67C0136368370A97DB17CB23F82AF7A4AA75AB ();
+// 0x0000002D System.Void CreateObject_<>c__DisplayClass6_0::<DropOtosimono>b__0()
+extern void U3CU3Ec__DisplayClass6_0_U3CDropOtosimonoU3Eb__0_mF0C4DF2F8FF8C9E44A4A51BB86D27ACCA7427A66 ();
 // 0x0000002E System.Void FadeController_<>c::.cctor()
 extern void U3CU3Ec__cctor_mA26D18D96D4B866624F0AFE45C6DD02A9E73B805 ();
 // 0x0000002F System.Void FadeController_<>c::.ctor()
@@ -168,8 +168,8 @@ static Il2CppMethodPointer s_methodPointers[56] =
 	UnityMessageManager_onMessage_mD1704644A461EFD311809BB58F82D36898713485,
 	UnityMessageManager_onFlutterMessage_m5BEF69E2E3423B8F8ACCB39BBF8286128B4C2B5A,
 	UnityMessageManager__ctor_mFB3651A2237E489ED8746D5B8FC5B5AB95FE7CE7,
-	U3CU3Ec__DisplayClass5_0__ctor_m45450698DAF1BFA708D18C9ABCE2CBF0C7F19B69,
-	U3CU3Ec__DisplayClass5_0_U3CDropOtosimonoU3Eb__0_mAB0F9BEDE4E262A1347E821BE0B9295F65C3D629,
+	U3CU3Ec__DisplayClass6_0__ctor_m6D67C0136368370A97DB17CB23F82AF7A4AA75AB,
+	U3CU3Ec__DisplayClass6_0_U3CDropOtosimonoU3Eb__0_mF0C4DF2F8FF8C9E44A4A51BB86D27ACCA7427A66,
 	U3CU3Ec__cctor_mA26D18D96D4B866624F0AFE45C6DD02A9E73B805,
 	U3CU3Ec__ctor_mFA98F364F7E5504C5E3EFDFDB5BE18BA271CE72A,
 	U3CU3Ec_U3C_ctorU3Eb__14_0_m44D77CBA68C7D56FD288DB7FA6DA861C7AF0FF7C,
@@ -248,10 +248,7 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[22] = 
 {
-	{ (Il2CppRGCTXDataType)2, 32114 },
-	{ (Il2CppRGCTXDataType)3, 22705 },
 	{ (Il2CppRGCTXDataType)2, 32115 },
-	{ (Il2CppRGCTXDataType)3, 22706 },
 	{ (Il2CppRGCTXDataType)3, 22707 },
 	{ (Il2CppRGCTXDataType)2, 32116 },
 	{ (Il2CppRGCTXDataType)3, 22708 },
@@ -262,14 +259,17 @@ static const Il2CppRGCTXDefinition s_rgctxValues[22] =
 	{ (Il2CppRGCTXDataType)2, 32118 },
 	{ (Il2CppRGCTXDataType)3, 22712 },
 	{ (Il2CppRGCTXDataType)3, 22713 },
+	{ (Il2CppRGCTXDataType)2, 32119 },
 	{ (Il2CppRGCTXDataType)3, 22714 },
 	{ (Il2CppRGCTXDataType)3, 22715 },
 	{ (Il2CppRGCTXDataType)3, 22716 },
+	{ (Il2CppRGCTXDataType)3, 22717 },
+	{ (Il2CppRGCTXDataType)3, 22718 },
 	{ (Il2CppRGCTXDataType)2, 31313 },
 	{ (Il2CppRGCTXDataType)2, 31314 },
 	{ (Il2CppRGCTXDataType)2, 31315 },
 	{ (Il2CppRGCTXDataType)2, 31316 },
-	{ (Il2CppRGCTXDataType)3, 22717 },
+	{ (Il2CppRGCTXDataType)3, 22719 },
 };
 extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 

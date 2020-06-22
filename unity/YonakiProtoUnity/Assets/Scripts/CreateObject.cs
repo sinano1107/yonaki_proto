@@ -11,6 +11,7 @@ public class CreateObject : MonoBehaviour
 
     ARRaycastManager raycastManager;
     List<ARRaycastHit> hitResults = new List<ARRaycastHit>();
+    ARPlaneManager planeManager;
 
     GameObject director;
     GameObject panel;
@@ -30,6 +31,15 @@ public class CreateObject : MonoBehaviour
             
             // オトシモノの生成
             Instantiate(objectPrefab, new Vector3(x, y, z), Quaternion.identity);
+
+            // 平面検知を停止
+            planeManager.detectionMode = PlaneDetectionMode.None;
+
+            // planeManagerを非アクティブ化
+            planeManager.SetTrackablesActive(false);
+
+            // 平面のプレハブを非アクティブ化
+            planeManager.planePrefab.SetActive(false);
         };
 
         // フェードアウト
@@ -40,6 +50,7 @@ public class CreateObject : MonoBehaviour
     void Awake()
     {
         raycastManager = GetComponent<ARRaycastManager>();
+        planeManager = GetComponent<ARPlaneManager>();
     }
 
     void Start()
