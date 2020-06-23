@@ -42,6 +42,7 @@
 		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="CenterRay" preserve="nothing"/>
 		<type fullname="CreateObject" preserve="nothing"/>
 		<type fullname="FadeController" preserve="nothing"/>
 		<type fullname="GameDirector" preserve="nothing"/>
