@@ -946,6 +946,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Find();
 		Register_UnityEngine_GameObject_Find();
 
+		//UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
+		void Register_UnityEngine_GameObject_FindGameObjectWithTag();
+		Register_UnityEngine_GameObject_FindGameObjectWithTag();
+
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
 		Register_UnityEngine_GameObject_get_transform();
@@ -2537,6 +2541,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::set_rotation_Injected(UnityEngine.Quaternion&)
 		void Register_UnityEngine_Transform_set_rotation_Injected();
 		Register_UnityEngine_Transform_set_rotation_Injected();
+
+		//UnityEngine.Transform UnityEngine.Transform::FindRelativeTransformWithPath(UnityEngine.Transform,System.String,System.Boolean)
+		void Register_UnityEngine_Transform_FindRelativeTransformWithPath();
+		Register_UnityEngine_Transform_FindRelativeTransformWithPath();
 
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();

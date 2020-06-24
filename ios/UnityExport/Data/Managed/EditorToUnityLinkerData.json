@@ -468,6 +468,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PickUpObject",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Unity.XR.ARFoundation.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.ARFoundation.ARCameraBackground",
@@ -548,6 +555,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.EventSystems.StandaloneInputModule",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Button",
             "moduleName": "",
             "usedInScenes": []
         },

@@ -5,6 +5,7 @@ using UnityEngine;
 public class CenterRay : MonoBehaviour
 {
     GameDirector director;
+    PickUpObject pickUpObject;
 
     string state = ""; // 情報保存用の変数
     Vector3 center = new Vector3(Screen.width/2, Screen.height/2);
@@ -13,6 +14,7 @@ public class CenterRay : MonoBehaviour
 
     void Start() {
         director = GameObject.Find("GameDirector").GetComponent<GameDirector>();
+        pickUpObject = transform.parent.gameObject.GetComponent<PickUpObject>();
     }
 
     void Update() {
@@ -26,12 +28,16 @@ public class CenterRay : MonoBehaviour
             if (state != tag && tag != "Plane") {
                 state = tag;
                 director.EditText($"{tag}を見つけました");
+                pickUpObject.TogglePickUpButton(true);
+                pickUpObject.EditPickUpButtonText($"{tag}を拾う");
+                pickUpObject.EditTarget(tag);
             }
         } else {
             // オブジェクトと当たらなかった時
             if (state != "") {
                 state = "";
                 director.EditText("オブジェクトを見失いました");
+                pickUpObject.TogglePickUpButton(false);
             }
         }
     }
