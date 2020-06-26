@@ -356,6 +356,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA59E151E43C322C8BF9639B6DF501AC1FD60F26B
 IL2CPP_EXTERN_C String_t* _stringLiteralA8F23785D457FA782466E3BD8DE56B4CEC9D3A97;
 IL2CPP_EXTERN_C String_t* _stringLiteralC139E5EE86EF539BA9929E7C913AE96E9ED1F92C;
 IL2CPP_EXTERN_C String_t* _stringLiteralC3328C39B0E29F78E9FF45DB674248B1D245887D;
+IL2CPP_EXTERN_C String_t* _stringLiteralCEF6F70A8DA2F5C6D32911D2F1F274155E8379F1;
 IL2CPP_EXTERN_C String_t* _stringLiteralD3BC9A378DAAA1DDDBA1B19C1AA641D3E9683C46;
 IL2CPP_EXTERN_C String_t* _stringLiteralD3ED06D8ADCBDFF6079A520D21BA08F90A850BB2;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
@@ -373,6 +374,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mC61E608C684061D4497B770
 IL2CPP_EXTERN_C const RuntimeMethod* Extensions_Value_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_m1AD7A634189A8C2D4EC3CA2AED6B026D5A5FA152_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Extensions_Value_TisString_t_m71FF25427F755D58F5C6578839A5EC7E3BF6F89C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisUnityMessageManager_t84F521C4D6478829BA5A1B35425A87A5C915D22F_mB6B969AE735C0C299C10DB75E705C75E6AFCEF47_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A_mEC7485CE991FE206BBFA111A662E54E3A959C1A3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisFadeController_tE6898A6F68DD8EBE76674A23960B27B70F5E0C15_m0222FCCA186050D42DD8080236D8E2FB4C375A4D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisGameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA_m1AD7F232FF7583BF481A34308A79DD309496177F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisPickUpObject_t13ADFB378293C67F815D21BC6127D5C98F3722E5_m5D651D99C03731ABC29ED0CC78634F17523F08FD_RuntimeMethod_var;
@@ -3063,6 +3065,8 @@ struct  GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA  : public MonoBeh
 public:
 	// UnityEngine.GameObject GameDirector::text
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___text_4;
+	// UnityEngine.XR.ARFoundation.ARPlaneManager GameDirector::planeManager
+	ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * ___planeManager_5;
 
 public:
 	inline static int32_t get_offset_of_text_4() { return static_cast<int32_t>(offsetof(GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA, ___text_4)); }
@@ -3072,6 +3076,15 @@ public:
 	{
 		___text_4 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___text_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_planeManager_5() { return static_cast<int32_t>(offsetof(GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA, ___planeManager_5)); }
+	inline ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * get_planeManager_5() const { return ___planeManager_5; }
+	inline ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A ** get_address_of_planeManager_5() { return &___planeManager_5; }
+	inline void set_planeManager_5(ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * value)
+	{
+		___planeManager_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___planeManager_5), (void*)value);
 	}
 };
 
@@ -4533,6 +4546,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_t942E023788C2BC9FBB7EC8356B4FB0088B2CFE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Scene_get_buildIndex_m764659943B7357F5D6C9165F68EDCFBBDDD6C3C2 (Scene_t942E023788C2BC9FBB7EC8356B4FB0088B2CFED2 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_m258051AAA1489D2D8B252815A45C1E9A2C097201 (int32_t ___sceneBuildIndex0, const RuntimeMethod* method);
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.XR.ARFoundation.ARPlaneManager>()
+inline ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * GameObject_GetComponent_TisARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A_mEC7485CE991FE206BBFA111A662E54E3A959C1A3 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
+{
+	return ((  ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_mD4382B2843BA9A61A01A8F9D7B9813D060F9C9CA_gshared)(__this, method);
+}
 // Newtonsoft.Json.Linq.JObject Newtonsoft.Json.Linq.JObject::Parse(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JObject_t6C820A9CC3048EAAEDE182737B6CC61B9181A989 * JObject_Parse_m6EDB41DC32CFAD94BBE7DE418C7E25D02E7FB295 (String_t* ___json0, const RuntimeMethod* method);
 // Newtonsoft.Json.Linq.JToken Newtonsoft.Json.Linq.JObject::GetValue(System.String)
@@ -5418,9 +5436,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameDirector_Start_m27E5B1E8F0E782E3FAB5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.text = GameObject.Find("Text");
+		// text = GameObject.Find("Text");
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = GameObject_Find_m1470FB04EB6DB15CCC0D9745B70EE987B318E9BD(_stringLiteralC3328C39B0E29F78E9FF45DB674248B1D245887D, /*hidden argument*/NULL);
 		__this->set_text_4(L_0);
+		// planeManager = GameObject.Find("AR Session Origin").GetComponent<ARPlaneManager>();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = GameObject_Find_m1470FB04EB6DB15CCC0D9745B70EE987B318E9BD(_stringLiteralCEF6F70A8DA2F5C6D32911D2F1F274155E8379F1, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * L_2 = GameObject_GetComponent_TisARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A_mEC7485CE991FE206BBFA111A662E54E3A959C1A3(L_1, /*hidden argument*/GameObject_GetComponent_TisARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A_mEC7485CE991FE206BBFA111A662E54E3A959C1A3_RuntimeMethod_var);
+		__this->set_planeManager_5(L_2);
+		// planeManager.detectionMode = PlaneDetectionMode.Horizontal;
+		ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * L_3 = __this->get_planeManager_5();
+		NullCheck(L_3);
+		ARPlaneManager_set_detectionMode_m665FC1E9216EA5CB396222A9A3FD5883CF1B97C8(L_3, 1, /*hidden argument*/NULL);
+		// planeManager.SetTrackablesActive(true);
+		ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * L_4 = __this->get_planeManager_5();
+		NullCheck(L_4);
+		ARTrackableManager_4_SetTrackablesActive_m04B8A0D1B72A834DA22B4E7389F7E0B3978903D2(L_4, (bool)1, /*hidden argument*/ARTrackableManager_4_SetTrackablesActive_m04B8A0D1B72A834DA22B4E7389F7E0B3978903D2_RuntimeMethod_var);
+		// planeManager.planePrefab.SetActive(true);
+		ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * L_5 = __this->get_planeManager_5();
+		NullCheck(L_5);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_6 = ARPlaneManager_get_planePrefab_m420C466CEE70BB4900C7C8BB699FF4CB288DB1C9_inline(L_5, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_6, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
 	}

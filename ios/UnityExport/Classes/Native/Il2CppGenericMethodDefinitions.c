@@ -21,7 +21,7 @@ IL2CPP_EXTERN_C_END
 
 
 extern const Il2CppMethodSpec g_Il2CppMethodSpecTable[];
-const Il2CppMethodSpec g_Il2CppMethodSpecTable[22721] = 
+const Il2CppMethodSpec g_Il2CppMethodSpecTable[22722] = 
 {
 	{ 0, 0, -1 } /* System.Void <>f__AnonymousType0`1<System.Object>::.ctor(<message>j__TPar) */,
 	{ 1, 0, -1 } /* System.Boolean <>f__AnonymousType0`1<System.Object>::Equals(System.Object) */,
@@ -5064,6 +5064,7 @@ const Il2CppMethodSpec g_Il2CppMethodSpecTable[22721] =
 	{ 10764, 1671, -1 } /* System.Void System.Collections.Generic.List`1<UnityEngine.XR.ARFoundation.ARRaycastHit>::.ctor() */,
 	{ 30165, -1, 1821 } /* !!0 UnityEngine.Object::Instantiate<UnityEngine.GameObject>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion) */,
 	{ 35100, 1637, -1 } /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`4<UnityEngine.XR.ARSubsystems.XRPlaneSubsystem,UnityEngine.XR.ARSubsystems.XRPlaneSubsystemDescriptor,UnityEngine.XR.ARSubsystems.BoundedPlane,UnityEngine.XR.ARFoundation.ARPlane>::SetTrackablesActive(System.Boolean) */,
+	{ 30057, -1, 2607 } /* !!0 UnityEngine.GameObject::GetComponent<UnityEngine.XR.ARFoundation.ARPlaneManager>() */,
 	{ 33812, -1, 16 } /* !!0 Newtonsoft.Json.Linq.Extensions::Value<System.Int32>(System.Collections.Generic.IEnumerable`1<Newtonsoft.Json.Linq.JToken>) */,
 	{ 33812, -1, 8 } /* !!0 Newtonsoft.Json.Linq.Extensions::Value<System.String>(System.Collections.Generic.IEnumerable`1<Newtonsoft.Json.Linq.JToken>) */,
 	{ 37542, 1859, -1 } /* System.Void <>f__AnonymousType0`4<System.Int32,System.String,System.String,System.Object>::.ctor(<id>j__TPar,<seq>j__TPar,<name>j__TPar,<data>j__TPar) */,

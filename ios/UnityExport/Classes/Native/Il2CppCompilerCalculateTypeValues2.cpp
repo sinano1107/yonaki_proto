@@ -46860,6 +46860,8 @@ struct  GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA  : public MonoBeh
 public:
 	// UnityEngine.GameObject GameDirector::text
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___text_4;
+	// UnityEngine.XR.ARFoundation.ARPlaneManager GameDirector::planeManager
+	ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * ___planeManager_5;
 
 public:
 	inline static int32_t get_offset_of_text_4() { return static_cast<int32_t>(offsetof(GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA, ___text_4)); }
@@ -46869,6 +46871,15 @@ public:
 	{
 		___text_4 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___text_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_planeManager_5() { return static_cast<int32_t>(offsetof(GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA, ___planeManager_5)); }
+	inline ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * get_planeManager_5() const { return ___planeManager_5; }
+	inline ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A ** get_address_of_planeManager_5() { return &___planeManager_5; }
+	inline void set_planeManager_5(ARPlaneManager_tC2613B8C888EBC3F92BF68E60F0A3E4DCCFAD69A * value)
+	{
+		___planeManager_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___planeManager_5), (void*)value);
 	}
 };
 
@@ -64730,9 +64741,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5393[2] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5394;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5394 = { sizeof (GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5394[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5394[2] = 
 {
 	GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA::get_offset_of_text_4(),
+	GameDirector_tDE75F8FDBBC7331FF690E392B210473D5C26A2FA::get_offset_of_planeManager_5(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5395;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5395 = { sizeof (PickUpObject_t13ADFB378293C67F815D21BC6127D5C98F3722E5), -1, 0, 0 };

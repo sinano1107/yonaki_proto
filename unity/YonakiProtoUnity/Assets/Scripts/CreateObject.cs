@@ -16,8 +16,7 @@ public class CreateObject : MonoBehaviour
     GameObject director;
     GameObject panel;
 
-    void DropOtosimono(float y)
-    {
+    void DropOtosimono(float y) {
         float x = Random.Range(-1.0f, 1.0f);
         float z = Random.Range(-1.0f, 1.0f);
 
@@ -47,21 +46,18 @@ public class CreateObject : MonoBehaviour
     }
 
     // 初期化
-    void Awake()
-    {
+    void Awake() {
         raycastManager = GetComponent<ARRaycastManager>();
         planeManager = GetComponent<ARPlaneManager>();
     }
 
-    void Start()
-    {
+    void Start() {
         this.director = GameObject.Find("GameDirector");
         this.panel = GameObject.Find("Panel");
     }
 
     // 更新毎に呼ばれる
-    void Update()
-    {
+    void Update() {
         // タッチ時
         if (Input.GetMouseButtonDown(0))
         {
