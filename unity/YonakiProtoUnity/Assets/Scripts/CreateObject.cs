@@ -16,6 +16,8 @@ public class CreateObject : MonoBehaviour
     GameObject director;
     GameObject panel;
 
+    bool isDroped = false; // すでにオトシモノを設置したか
+
     void DropOtosimono(float y) {
         float x = Random.Range(-1.0f, 1.0f);
         float z = Random.Range(-1.0f, 1.0f);
@@ -40,6 +42,7 @@ public class CreateObject : MonoBehaviour
             // 平面のプレハブを非アクティブ化
             planeManager.planePrefab.SetActive(false);
         };
+        isDroped = true;
 
         // フェードアウト
         fadeController.isFadeOut = true;
@@ -59,7 +62,7 @@ public class CreateObject : MonoBehaviour
     // 更新毎に呼ばれる
     void Update() {
         // タッチ時
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isDroped)
         {
             // 衝突時
             if (raycastManager.Raycast(Input.GetTouch(0).position, hitResults, TrackableType.PlaneWithinPolygon))
